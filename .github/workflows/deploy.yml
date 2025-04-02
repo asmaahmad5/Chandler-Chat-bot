@@ -26,9 +26,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # Install dependencies from requirements.txt
 
-    # Step 4: Deploy to Streamlit
-    - name: Deploy to Streamlit
+    # Set the OpenAI API key from GitHub secrets
+    - name: Set up OpenAI API key
       run: |
-        streamlit run Chatbot.py  # filename
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}  # Access the secret API key securely
+        echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
+
+    # Run Streamlit app
+    - name: Run Streamlit app
+      run: |
+        streamlit run Chatbot.py
