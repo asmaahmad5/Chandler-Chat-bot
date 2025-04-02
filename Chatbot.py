@@ -129,9 +129,8 @@ with st.expander("Older Chats", expanded=False):  # Allows for scrolling
 st.markdown("<div style='flex-grow: 1;'></div>", unsafe_allow_html=True)
 
 # Load the image at the very bottom
-image_path = os.path.join("static", "bottom-image.jpg")
-st.image(image_path, use_container_width=True)
-
+image_url = "https://raw.githubusercontent.com/asmaahmad5/Chandler-Chat-bot/main/bottom-image.jpg"
+st.image(image_url, use_container_width=True)
 
 # Sidebar feedback form
 st.sidebar.subheader("Give Feedback")
