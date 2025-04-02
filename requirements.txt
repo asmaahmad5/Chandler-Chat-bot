@@ -32,7 +32,7 @@ MarkupSafe==2.1.5
 mdurl==0.1.2
 narwhals==1.25.2
 numpy==2.2.2
-openai==1.64.0  # keep this version, remove the duplicate
+openai==1.64.0  
 orjson==3.10.15
 packaging==24.2
 pandas==2.2.3
