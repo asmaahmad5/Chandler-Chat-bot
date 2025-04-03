@@ -1,7 +1,7 @@
 🗨️ Chandler Chatbot – A Friends-Inspired AI Chatbot
 Ever wished you could chat with Chandler Bing? 😆 This chatbot brings Chandler’s iconic humor and sarcasm to life using AI.
 
-🚀 Try it live: [Click here to chat]!(https://chandler-chat-bot-5.streamlit.app/)
+🚀 Try it live: [Click here to chat](https://chandler-chat-bot-5.streamlit.app/)
 
 📌 About the Project
 The Chandler Chatbot is an AI-powered chatbot that responds like Chandler Bing from Friends, complete with sarcasm, jokes, and witty comebacks.
