@@ -5,9 +5,9 @@ import os
 
 from dotenv import load_dotenv
 
-api_key = os.getenv("OPENAI_API_KEY")
-if not openai.api_key:
-    raise ValueError("API Key not found. Make sure it's set in the environment variables.")
+api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
+if not api_key:
+    st.error("API Key not found. Make sure it's set in Streamlit Secrets or environment variables.")
 
 
 # Initialize Streamlit app
